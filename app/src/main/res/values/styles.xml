@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="EditInforEditTextIconClear">
+    <item name="android:layout_width">@dimen/dp_22</item>
+    <item name="android:layout_height">@dimen/dp_22</item>
+    <item name="android:background">@android:color/transparent</item>
+    <item name="android:padding">@dimen/dp_5</item>
+    <item name="android:drawable">@drawable/ic_cancel_gray</item>
+    <item name="android:visibility">invisible</item>
+  </style>
+</resources>

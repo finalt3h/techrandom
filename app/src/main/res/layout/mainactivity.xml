@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/btnRefresh"
+            android:textColor="#ffffff"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#cccccc"
+            android:src="@android:drawable/ic_menu_revert" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:scrollbars="vertical"
+            android:padding="10dp"
+            android:id="@+id/listV"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/card_view_design"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_height="match_parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:scrollbars="vertical"
+            android:padding="10dp"
+            android:id="@+id/rcvReason"
+            android:layout_width="match_parent"
+            tools:listitem="@layout/card_view_design"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_height="wrap_content"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc"
+            />
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:paddingRight="15dp"
+                    android:textColor="#ffffff"
+                    android:text="Add"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:background="#84A6F6"
+                    android:drawableStart="@android:drawable/ic_menu_add" />
+
+                <Button
+                    android:layout_alignParentRight="true"
+                    android:background="#02793f"
+                    android:id="@+id/btnStart"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="Start"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title_re"
+                android:textStyle="bold"
+                android:paddingVertical="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kết quả:"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:lineSpacingExtra="5dp"
+                android:textSize="18dp"
+                android:id="@+id/tvResult"
+                android:paddingVertical="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="..."
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
